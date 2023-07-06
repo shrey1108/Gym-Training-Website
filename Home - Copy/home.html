@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/79dc0e6dda.js" crossorigin="anonymous"></script>
+
+    <style>
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .left-icon {
+            flex: 0 0 50px;
+            margin-right: 15px;
+        }
+
+        .right-content {
+            flex: 1;
+        }
+        
+        .buttoncss {
+  --c: #826832; /* the color*/
+  
+  box-shadow: 0 0 0 0 inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+.buttoncss:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+.buttoncss:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+.buttoncss {
+  font-family: system-ui, sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+  padding: .1em .6em;
+  font-weight: bold;  
+  border: none;
+}
+
+.buttoncssw {
+  --c: #ffffff; /* the color*/
+  
+  
+  box-shadow: 0 0 0 0 inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+.buttoncssw:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  border: 0px 0px 1px 1px#1b1a17;
+
+}
+.buttoncssw:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+.buttoncssw {
+  font-family: system-ui, sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+  padding: .1em .6em;
+  font-weight: bold;  
+  border: none;
+}
+
+.glow{
+   width: auto;
+}
+.glow:hover{
+    color: #fff;
+}
+
+        </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg , fixed-top" style="background-color: #826832">
+        
+        <a class="navbar-brand" href="#"
+        style="color: black; font: weight 600px; margin-left: 0px; font-weight: 650; ">
+        <img src="mainlogo.png" style="  width: 125px; border-radius: 5px; margin-left: 10px;"alt="waves">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;" id="glow-link"><button class="buttoncssw" style="font-size: 100%;">HOME</button></a>
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size: 100%;">FEATURE</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size: 100%;">PRICING</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size: 100%;">CONTACT</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size: 100%;">LOCATION</button></a>
+                </li>
+                <a class="nav-link disabled , float-left" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size:100%; margin-right: -10px; margin-left: 640px;">LOGIN</button></a>
+                <a class="nav-link disabled , float-left" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw" style="font-size:105%; margin: 0px ; border-radius:20px ; background-color: #a18959">SIGN UP</button></a>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-image d-flex justify-content-center align-items-center" style="
+    background-image: url('home.jpg');
+    width: 100%;
+    height: 100dvh;
+    display: inline;">
+        <div>
+            <center><h1 style="margin: 10px; margin-left: 27px;font-weight: 700;" class="text-white">JOIN US</h1> </center>
+            <button style="background-color: #fff; font-size:30px; border-radius: 10px;" type="button" class="buttoncss">REGISTER</button>
+            <button style="background-color: #fff;font-size:30px; border-radius:10px;" type="button" class="buttoncss">CONTACT</button>
+        </div>
+    </div>
+    
+    <a class="fixed-bottom" style="width: 20px; margin-left: 95%; margin-bottom: 2%;" href="#top"
+        class="btn btn-primary"><button class="buttoncss  , btn btn-light " style="font-size: 25px ; background-color: #fff; border-radius: 10px;" ><center><i class="fa-solid fa-arrow-up" style="color: #000000; font-size: 22px;"></i></center></button></a>
+    <section class="section" style="background-color: #a18959;" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <br>
+                        <center>
+                            <i class="fa-solid fa-dumbbell" style="color: #000000; font-size:30px; margin-bottom: 5px;" ></i>
+                            <h2>WHY YOU SHOULD JOIN GYM</h2>
+                            <p> Joining a gym provides a Structured Environment for Exercise , Joining a gym offers numerous benefits, including : </p>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                            <li class="feature-item">
+                                
+                                <div class="right-content">
+                                    <div class="right-content ">
+                                        <h4> <img class="align-items" src="logo.png" style=" width: 8%;
+                                             border-radius:20%; margin-top: 0%; margin-right: 20px;" alt="second one">Increase Immune system</h4>
+                                        <p style="margin-left: 60px ;  margin-right: 10px;margin-bottom: 1%;">exercise increases blood and lymph flow as your muscles contract, it also increases the circulation of immune cells, making them roam the body at a higher rate and higher numbers, said Dr. Nieman.</p>                                            
+                                            <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.health.com/fitness/does-exercise-boost-immunity#:~:text=Because%20exercise%20increases%20blood%20and,numbers%2C%20said%20Dr.%20Nieman." target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass , glow" style="color: #000000;"></i> Discover More</button></a>
+                                        </div>
+                                </div>
+                            </li>
+                        <li class="feature-item">
+                            
+                            <div class="right-content">
+                                <h4><img class="align-items" src="logo.png" style=" width: 8%;
+                                    border-radius:20%; margin-top: 0%;  margin-right: 20px;" alt="second one">Increase Muscle Strength </h4>
+                                <p style="margin-left: 60px ; margin-right: 10px;margin-bottom: 1%;">Muscular strength relates to your ability to move and lift objects. Its measured by how much force you can exert and how much weight you can lift for a short period of time.</p>
+                                    <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.healthline.com/health/exercise-fitness/muscular-strength" target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> Discover More</button></a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            
+                            <div class="right-content">
+                                <h4><img class="align-items" src="logo.png" style=" width: 8%;
+                                    border-radius:20%; margin-top: 0%;  margin-right: 20px;" alt="second one">Reduce stress </h4>
+                                <p style="margin-left: 60px ;  margin-right: 20px;margin-bottom: 1%;">Exercise is a form of physical stress. Can physical stress relieve mental stress? Alexander Pope thought so: "Strength of mind is exercise, not rest." Plato agreed: "Exercise would cure a guilty conscience."</p>
+                                    <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.health.harvard.edu/staying-healthy/exercising-to-relax" target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> Discover More</button></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            
+                            <div class="right-content">
+                                <h4><img class="align-items" src="logo.png" style=" width: 8%;
+                                    border-radius:20%; margin-top: 0%;  margin-right: 20px;" alt="second one">Boost happy chemicals</h4>
+                                <p style="margin-left: 60px ; margin-right: 10px;margin-bottom: 1%;"> When you exercise, your body releases chemicals called endorphins. These endorphins interact with the receptors in your brain that reduce your perception of pain.
+                                    Endorphins also trigger a positive feeling in the body.</p>
+                                    <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.webmd.com/depression/exercise-depression" target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> Discover More</button></a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            
+                            <div class="right-content">
+                                <h4><img class="align-items" src="logo.png" style=" width: 8%;
+                                    border-radius:20%; margin-top: 0%;  margin-right: 20px;" alt="second one">Improve self-confidence</h4>
+                                <p style="margin-left: 60px ; margin-right: 10px;margin-bottom: 1%;"> physical confidence being one of them. Exercise is an important tool that helps us achieve this physical confidence. Beyond the postural imbalances, muscle tensions and day-to-day energy demands.</p>
+                                <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.indiatimes.com/health/tips-tricks/how-exercise-boosts-confidence-238523.html" target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> Discover More</button></a>
+                                
+                                
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            
+                            <div class="right-content">
+                                <h4><img class="align-items" src="logo.png" style=" width: 8%;
+                                    border-radius:20%; margin-top: 0%; margin-right: 20px;" alt="second one">Enjoy the great outdoors</h4>
+                                <p style="margin-left: 60px; margin-bottom: 1%;">Outdoor exercise can help you improve your mood, sleep quality, and energy levels. The fresh air also gives you a boost and makes it easier to focus on what you're doing.</p>
+                                    <a style="margin-left: 70px ; margin-right: 10px;" href="https://www.americansportandfitness.com/blogs/fitness-blog/the-great-outdoors-the-benefits-of-outdoor-workouts-for-mood-and-well-being" target="_blank" class="text-button"><button class="buttoncss" style="font-size: 100%; border-radius: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> Discover More</button></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="background-color: #1b1a17;">
+        <center>
+            <div><h3 style="color: #fff; padding: 20px; margin-bottom: 0px;"><i class="fa-solid fa-seedling " style="color: #ffffff; margin-right:10px ;" ></i>HEALTH BRANDS WE SUGGEST</h3></div>
+            <div id="carouselExampleCaptions " class="carousel slide" style="width: 40%;padding-top: 0px;" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol> 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="AAvatar.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color:black; margin: 20px;">
+                            <h5 >AAvatar PROTEIN</h5>
+                            <p>Parag Milk Foods Ltd, founded in 1992, is one of India's elite private sector dairy company</p>
+                            <a style="margin:auto" href="https://www.avvatarindia.com/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Myfitness.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block"  style="background-color:black; margin: 20px;">
+                            <h5>MYPROTEIN</h5>
+                            <p>Europe's No.1 Sports Nutrition Brand. Fuel Your Ambition. Official Products.</p>
+                            <a style="margin:auto" href="https://www.myprotein.co.in/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="onprotein.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color:black; margin: 20px;">
+                            <h5>ON OPTIMIUM NUTRITION</h5>
+                            <p>Trusted by world's best Athletes for Last 35 Years : Your Ultimate Fitness Partner</p>
+                            <a style="margin:auto" href="https://www.optimumnutrition.co.in/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttoncss , carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="buttoncss , carousel-control-next"  type="button" data-target="#carouselExampleCaptions"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+            <div><h3 style="color: #fff; padding: 20px; margin-bottom: 0px;"><i class="fa-solid fa-seedling " style="color: #ffffff; margin-right:10px ;" ></i>HEALTH BRANDS WE SUGGEST</h3></div>
+            <div id="carouselExampleCaptions " class="carousel slide" style="width: 40%;padding-top: 0px;" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol> 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="AAvatar.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color:black; margin: 20px;">
+                            <h5 >AAvatar PROTEIN</h5>
+                            <p>Parag Milk Foods Ltd, founded in 1992, is one of India's elite private sector dairy company</p>
+                            <a style="margin:auto" href="https://www.avvatarindia.com/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Myfitness.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block"  style="background-color:black; margin: 20px;">
+                            <h5>MYPROTEIN</h5>
+                            <p>Europe's No.1 Sports Nutrition Brand. Fuel Your Ambition. Official Products.</p>
+                            <a style="margin:auto" href="https://www.myprotein.co.in/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="onprotein.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color:black; margin: 20px;">
+                            <h5>ON OPTIMIUM NUTRITION</h5>
+                            <p>Trusted by world's best Athletes for Last 35 Years : Your Ultimate Fitness Partner</p>
+                            <a style="margin:auto" href="https://www.optimumnutrition.co.in/" target="_blank" class="text-button"><button class="buttoncss" style="font-size:15px; border-radius: 20px;margin-left: 220px; color: #000000; background-color: #fff;"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>Visit Page</button></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttoncss , carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="buttoncss , carousel-control-next"  type="button" data-target="#carouselExampleCaptions"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </center>
+        <br>
+    </div>
+    <div style=" background-color: #a18959;">
+
+        <div class="card-deck" style="padding: 2%; width: 75%; margin:auto;">
+            <div class="card">
+                <img src="home.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="home.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="home.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #1b1a17; width: 101%;">
+        <div style="background-color: aliceblue; margin: 40px; margin-left: auto; border-radius: 4%; margin-right: 0px;">
+            <form style="padding: 10%;">
+                <center style="font-weight: 700;"  >FEEDBACK</center>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+        </div>
+        <div style="background-color: aliceblue; margin: auto; height: 500px; margin-left: 10px; border-radius: 4%; " >
+            <center style="font-weight: 700; margin-top :13px; margin-bottom: 12px; margin-left: 0px; ">LOCATION</center>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54551.81003266772!2d75.59813394866897!3d31.290251198777046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1688504377397!5m2!1sen!2sin"
+                width="800" height="450" style=" border-radius: 4%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    
+         
+</body>
+
+</html>
