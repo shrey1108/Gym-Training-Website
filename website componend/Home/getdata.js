@@ -1,6 +1,6 @@
 $(function()
 {
-    var app_cover = $('#app-cover'), inp = $('.inp'), prevAction = $('#prev-action-btn'), nextAction=$('#next-action-btn'), stepComplete = false, progress = $('#progress'), timeOut = null, stepsArr = ['email','username','password'], stepNumber = 1, lastCompletedStep=0, totalSteps = stepsArr.length;
+    var app_cover = $('#app-cover'), inp = $('.inp'), prevAction = $('#prev-action-btn'), nextAction=$('#next-action-btn'), stepComplete = false, progress = $('#progress'), timeOut = null,  stepNumber = 1, lastCompletedStep=0, totalSteps = stepsArr.length;
 
     // added new
     $(document).on('keydown', function(event) {
@@ -80,6 +80,7 @@ $(function()
                     _a();
                 else
                     _b();
+                    
             },500);
         }
         else if( stepsArr[index] == 'password' )

@@ -35,10 +35,8 @@
 <!-- link for icon -->
 <script src="https://kit.fontawesome.com/79dc0e6dda.js" crossorigin="anonymous"></script>
 
-<!-- for signup -->
 <script>
- var stepsArr = ['email','username','password'];
-
+ var stepsArr = ['email','password'];
 
 </script>
 
@@ -51,7 +49,7 @@
    transform: translate(-50%, -50%); 
    border-radius: 10px; box-shadow: 0px 0px 20px 5px #303032;">
 		<center><h3 style="margin:20px ; color: #303032; position: absolute; top:5% ; left: 45%;
-			transform: translate(-50%, -50%);">Sign Up</h3></center>
+			transform: translate(-50%, -50%);">Getting-In</h3></center>
 	<div class=" svgContainer" style="position: absolute; top:37% ; left: 50%;
 	transform: translate(-50%, -50%); ">
 		<form>
@@ -223,7 +221,7 @@
 	<!-- new one -->
 	<div id="app-cover" style="position: absolute; top:88% ; left: 33%;
 	transform: translate(-50%, -50%);" >
-        <h1 id="heading" style="margin-left: 10px; color: #303032;">Register</h1>
+        <h1 id="heading" style="margin-left: 10px; color: #303032;">Log-in</h1>
         <form method="post" action="" autocomplete="off">
           <div id="inp-box-cover">
             <div id="inp-padd" style=".inp-box input:focus {
@@ -231,15 +229,10 @@
 			}">
               <div class="inp-box" id="email">
 				  <label for="loginEmail" id="loginEmailLabel" style="margin: 0px; width: 310px;">
-					<input type="email" id="loginEmail" class="inp" placeholder="Your email address" spellcheck="false" autocomplete="off">
+					<input type="email" id="loginEmail" class="inp" placeholder="Your email address/userId" spellcheck="false" autocomplete="off">
 				</label>
               </div>
-              <div class="inp-box" id="username">
-				<label for="loginuser" id="loginuserLabel"style="margin: 0px;">
-					<input type="text"id="loginuser" class="inp" placeholder="Your username" spellcheck="false">
-				</label>
-              </div>
-              <div class="d-flex inp-box" id="password" style="margin-top: -5px;">
+              <div class="d-flex inp-box" id="password" style="margin-top: 17.5px;">
                 <input type="password"id="loginPassword" class="inp" placeholder="Password ( 5 characters)">
 				<label class="d-flex" id="showPasswordToggle" style="margin: 0px;">
 					<input id="showPasswordCheck" type="checkbox" />Show
@@ -252,7 +245,7 @@
             <div id="progress-bar-cover">
               <div id="progress">
                 <div id="working">Working<i class="fas fa-sync-alt fa-spin"></i></div>
-                <div id="acc-success">Account Created<i class="fas fa-check"></i><a href="Login.html"><span class="buttoncss" style="width: 100px; height: 30px; color: black; --c: #ddf1fa; background-size: 50.5% calc(var(--_p, 0%)/2 + 1.5%);" id="init-login">Login now</span></a></div>
+                <div id="acc-success">click to login<i class="fas fa-check"></i><a href="home.html"><span class="buttoncss" style="width: 100px; height: 30px; color: black; --c: #ddf1fa; background-size: 50.5% calc(var(--_p, 0%)/2 + 1.5%);" id="init-login">Login now</span></a></div>
               </div>
             </div>
           </div>
