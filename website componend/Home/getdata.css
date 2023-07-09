@@ -260,7 +260,8 @@ body, input
   left: 0;
   color: transparent;
   width: 0%;
-  background-color: #5f5f64;
+  border-radius: 10px;
+  background-color: #303032;
   transition: 0.5s ease all;
 }
 

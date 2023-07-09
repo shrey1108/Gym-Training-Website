@@ -32,19 +32,25 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<!-- link for icon -->
+<script src="https://kit.fontawesome.com/79dc0e6dda.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body style="background-color: rgb(174, 129, 15);">
-   <div class="" style="background-color: #0f97d1;  width: 400px; height: 600px;  position: absolute;
+   <div class="" style="background-color: #399bc5;  width: 400px; height: 550px;  position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%); ">
-		<center><h3 style="margin:20px ;">Log In</h3></center>
-	<div class=" svgContainer" style="margin-left: 120px;">
+   transform: translate(-50%, -50%); 
+   border-radius: 10px; box-shadow: 0px 0px 20px 5px #303032;">
+		<center><h3 style="margin:20px ; color: #303032; position: absolute; top:5% ; left: 45%;
+			transform: translate(-50%, -50%);">Sign Up</h3></center>
+	<div class=" svgContainer" style="position: absolute; top:37% ; left: 50%;
+	transform: translate(-50%, -50%); ">
 		<form>
 				<div >
 					<svg class="mySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-					viewBox="0 0 200 200" style="border-radius: 150px ; width: 170px; box-shadow: 0px 0px 1px 5px #23789c;">
+					viewBox="0 0 200 200" style="border-radius: 100px ; width: 200px; border-color: #1e6685; border-style: solid; border-width: 5px;">
 					<defs>
 						<circle id="armMaskPath" cx="100" cy="100" r="100" />
           </defs>
@@ -208,11 +214,14 @@
      -->
 
 	<!-- new one -->
-	<div id="app-cover" style="margin: 0px; margin-top: 0px;" >
-        <h1 id="heading" style="margin-left: 10px;">Sign Up</h1>
+	<div id="app-cover" style="position: absolute; top:88% ; left: 33%;
+	transform: translate(-50%, -50%);" >
+        <h1 id="heading" style="margin-left: 10px; color: #303032;">Register</h1>
         <form method="post" action="" autocomplete="off">
           <div id="inp-box-cover">
-            <div id="inp-padd">
+            <div id="inp-padd" style=".inp-box input:focus {
+				margin-left: 0;
+			}">
               <div class="inp-box" id="email">
 				  <label for="loginEmail" id="loginEmailLabel" style="margin: 0px; width: 350px;">
 					<input type="email" id="loginEmail" class="inp" placeholder="Your email address" spellcheck="false" autocomplete="off">
@@ -230,13 +239,13 @@
 					<div class="indicator"></div>
 				</label>
               </div>
-              <div id="prev-action-btn"><i class="fas fa-chevron-circle-left"></i></div>
-              <div id="next-action-btn"><i class="fas fa-chevron-circle-right"></i></div>
+			  <div id="prev-action-btn" style="margin-top: 3px;"><i class="fa-solid fa-arrow-left" style="color: #303032"></i></div>
+              <div id="next-action-btn" style="margin-top: 3px;"><i class="fa-solid fa-arrow-right" style="color: #303032;"></i></div>
             </div>
             <div id="progress-bar-cover">
               <div id="progress">
                 <div id="working">Working<i class="fas fa-sync-alt fa-spin"></i></div>
-                <div id="acc-success">Account Created<i class="fas fa-check"></i><span id="init-login">Login now</span></div>
+                <div id="acc-success">Account Created<i class="fas fa-check"></i><a href="#"><span class="buttoncss" style="width: 100px; height: 30px; color: black; --c: #ddf1fa; background-size: 50.5% calc(var(--_p, 0%)/2 + 1.5%);" id="init-login">Login now</span></a></div>
               </div>
             </div>
           </div>

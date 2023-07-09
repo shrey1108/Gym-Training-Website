@@ -76,7 +76,7 @@ $(function()
             clearTimeout(timeOut);
             timeOut = setTimeout(function()
             {
-                if( _val.length > 0 )
+                if( _val.length > 5 )
                     _a();
                 else
                     _b();

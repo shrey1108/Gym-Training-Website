@@ -18,109 +18,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/79dc0e6dda.js" crossorigin="anonymous"></script>
 
-    <style>
-        .feature-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .left-icon {
-            flex: 0 0 50px;
-            margin-right: 15px;
-        }
-
-        .right-content {
-            flex: 1;
-        }
-
-        .buttoncss {
-            --c: #826832;
-            /* the color*/
-
-            box-shadow: 0 0 0 0 inset var(--c);
-            --_g: linear-gradient(var(--c) 0 0) no-repeat;
-            background:
-                var(--_g) calc(var(--_p, 0%) - 100%) 0%,
-                var(--_g) calc(200% - var(--_p, 0%)) 0%,
-                var(--_g) calc(var(--_p, 0%) - 100%) 100%,
-                var(--_g) calc(200% - var(--_p, 0%)) 100%;
-            background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
-            outline-offset: .1em;
-            transition: background-size .4s, background-position 0s .4s;
-        }
-
-        .buttoncss:hover {
-            --_p: 100%;
-            transition: background-position .4s, background-size 0s;
-        }
-
-        .buttoncss:active {
-            box-shadow: 0 0 9e9q inset #0009;
-            background-color: var(--c);
-            color: #fff;
-        }
-
-        .buttoncss {
-            font-family: system-ui, sans-serif;
-            font-size: 3.5rem;
-            cursor: pointer;
-            padding: .1em .6em;
-            font-weight: bold;
-            border: none;
-        }
-
-        .buttoncssw {
-            --c: #ffffff;
-            /* the color*/
-
-
-            box-shadow: 0 0 0 0 inset var(--c);
-            --_g: linear-gradient(var(--c) 0 0) no-repeat;
-            background:
-                var(--_g) calc(var(--_p, 0%) - 100%) 0%,
-                var(--_g) calc(200% - var(--_p, 0%)) 0%,
-                var(--_g) calc(var(--_p, 0%) - 100%) 100%,
-                var(--_g) calc(200% - var(--_p, 0%)) 100%;
-            background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
-            outline-offset: .1em;
-            transition: background-size .4s, background-position 0s .4s;
-        }
-
-        .buttoncssw:hover {
-            --_p: 100%;
-            transition: background-position .4s, background-size 0s;
-            border: 0px 0px 1px 1px#1b1a17;
-
-        }
-
-        .buttoncssw:active {
-            box-shadow: 0 0 9e9q inset #0009;
-            background-color: var(--c);
-            color: #fff;
-        }
-
-        .buttoncssw {
-            font-family: system-ui, sans-serif;
-            font-size: 3.5rem;
-            cursor: pointer;
-            padding: .1em .6em;
-            font-weight: bold;
-            border: none;
-        }
-
-        .glow {
-            width: auto;
-        }
-
-        .glow:hover {
-            color: #fff;
-        }
-        html{
-        scroll-behavior: smooth;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -137,31 +35,31 @@
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"
-                        id="glow-link"><button class="buttoncssw" style="font-size: 100%;">HOME</button></a>
+                        id="glow-link"><button class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">HOME</button></a>
                     <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button
-                            class="buttoncssw" style="font-size: 100%;">FEATURE</button></a>
+                            class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">FEATURE</button></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button
-                            class="buttoncssw" style="font-size: 100%;">PRICING</button></a>
+                            class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">PRICING</button></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button
-                            class="buttoncssw" style="font-size: 100%;">CONTACT</button></a>
+                            class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">CONTACT</button></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button
-                            class="buttoncssw" style="font-size: 100%;">LOCATION</button></a>
+                            class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">LOCATION</button></a>
                 </li>
                 <a class="nav-link disabled , float-left" href="button.html"
-                    style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw"
-                        style="font-size:100%; margin-right: -10px; margin-left: 640px;">LOGIN</button></a>
+                    style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncss"
+                        style="font-size:100%; margin-right: -10px; margin-left: 640px; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">LOGIN</button></a>
                 <a class="nav-link disabled , float-left" href="Signup.html"
-                    style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncssw"
-                        style="font-size:105%; margin: 0px ; border-radius:20px ; background-color: #a18959">SIGN
+                    style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncss"
+                        style="font-size:105%; margin: 0px ; border-radius:20px ; background-color: #a18959; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">SIGN
                         UP</button></a>
 
             </ul>
