@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg , fixed-top" style="background-color: #826832; width: 100%;">
+    <nav class="navbar navbar-expand-lg , fixed-top" style="background-color: #826832; width: 100%; position: relative;">
 
         <a class="navbar-brand" href="#" style="color: black; font: weight 600px; margin-left: 0px; font-weight: 650; ">
             <img src="image/mainlogo.png" style="  width: 125px; border-radius: 5px; margin-left: 10px;" alt="waves">
@@ -54,12 +54,15 @@
                     <a class="nav-link disabled" href="#" style="color: rgb(26, 26, 26); font-weight: 600;"><button
                             class="buttoncss" style="font-size: 100%; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">LOCATION</button></a>
                 </li>
-                <a class="nav-link disabled , float-left" href="Login.html"
-                    style="color: rgb(26, 26, 26); font-weight: 600; margin-left: 87%;"><button class="buttoncss"
-                        style="font-size:100%; margin-right: -10px ; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">LOGIN</button></a>
-                <a class="nav-link disabled , float-left" href="Signup.html"
+                <div style="position: absolute; right: 5%;">
+
+                    <a class="nav-link disabled , float-left" href="Login.html"
                     style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncss"
-                        style="font-size:105%; margin: 0px ; width: 95px; height: 100%; border-radius:20px ; background-color: #a18959; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">SIGN UP</button></a>
+                    style="font-size:100%; margin-right: -10px ; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">LOGIN</button></a>
+                    <a class="nav-link disabled , float-left" href="Signup.html"
+                    style="color: rgb(26, 26, 26); font-weight: 600;"><button class="buttoncss"
+                    style="font-size:105%; margin: 0px ; width: 95px; height: 100%; border-radius:20px ; background-color: #a18959; --c: #ffffff; border: 0px 0px 1px 1px#1b1a17;">SIGN UP</button></a>
+                </div>
 
             </ul>
         </div>
@@ -71,7 +74,7 @@
     height: 850px;
     "> -->
     <div class="bg-image d-flex justify-content-center align-items-center">
-        <video autoplay muted loop id="myVideo" style="background-size: cover; background-position: center; width: 100%;  ">
+        <video autoplay muted loop id="myVideo" style="background-size: cover; background-position: center; width: 100%; opacity:95%; ">
             <source src="image/pexels-tima-miroshnichenko-5319759 (2160p) (1).mp4" type="video/mp4">
           </video>
         <div class="content" style="position: absolute;" >
