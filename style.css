@@ -16,6 +16,7 @@
 .buttoncss {
     --c: #826832;
     /* the color*/
+    color: black;
 
     box-shadow: 0 0 0 0 inset var(--c);
     --_g: linear-gradient(var(--c) 0 0) no-repeat;
